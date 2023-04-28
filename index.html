@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Deutschland</title>	<meta charset="UTF-8">
+
+	<style>
+
+		/* Háttérszín beállítása */
+
+		body {
+
+			background-color: #F2F2F2;
+
+		}
+
+		/* Az oldal középre igazítása */
+
+		.container {
+
+			max-width: 960px;
+
+			margin: 0 auto;
+
+			padding: 20px;
+
+		}
+
+		/* Címsor beállítása */
+
+		.title {
+
+			text-align: center;
+
+			margin-bottom: 20px;
+
+		}
+
+		/* Menüsor beállítása */
+
+		.menu {
+
+			list-style-type: none;
+
+			margin: 0;
+
+			padding: 0;
+
+			display: flex;
+
+			justify-content: center;
+
+		}
+
+		/* Menüelemek stílusa */
+
+		.menu li {
+
+			margin: 0 10px;
+
+		}
+
+		.menu li a {
+
+			display: block;
+
+			padding: 10px;
+
+			background-color: #EDEDED;
+
+			border: 1px solid #D1D1D1;
+
+			color: #333333;
+
+			text-decoration: none;
+
+			font-weight: bold;
+
+			border-radius: 3px;
+
+			transition: background-color 0.3s ease;
+
+		}
+
+		.menu li a:hover {
+
+			background-color: #D1D1D1;
+
+		}
+
+		/* Ablakok stílusa */
+
+		.window {
+
+			width: 400px;
+
+			height: 300px;
+
+			background-color: #FFFFFF;
+
+			border: 1px solid #D1D1D1;
+
+			padding: 20px;
+
+			display: none;
+
+			position: absolute;
+
+			top: 50%;
+
+			left: 50%;
+
+			transform: translate(-50%, -50%);
+
+			box-shadow: 0px 3px 10px #D1D1D1;
+
+			border-radius: 5px;
+
+			overflow: hidden;
+
+		}
+
+		.window h2 {
+
+			margin-top: 0;
+
+		}
+
+		.window p {
+
+			margin-bottom: 0;
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h1 class="title">Osztályok</h1>
+
+		<ul class="menu">
+
+			<li><a href="#" onclick="showWindow('Geschichte')">Geschichte</a></li>
+
+			<li><a href="#" onclick="showWindow('Sprache')">Sprache</a></li>
+
+			<li><a href="#" onclick="showWindow('Kultur')">Kultur</a></li>
+
+			<li><a href="#" onclick="showWindow('Land')">Land</a></li>
+
+		</ul>
+
+		<!-- Ablakok -->
+
+		<div id="Geschichte" class="window">
+
+			<h2>Geschichte</h2>
+
+			<p>Ez a Történelem ablak.</p>
+
+		</div>
+
+		<div id="Sprache" class="window">
+
+			<h2>Sprache</h2>
+
+			<p>Ez a Nyelvtan ablak.</p>
+
+		</div>
+
+		<div id="Kultur
